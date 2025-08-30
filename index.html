@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-Up Form</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font eksternal (bebas pilih, contoh Montserrat) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="hero">
+    <div class="overlay">
+      <!-- Logo Odin -->
+      <h1 class="logo">ODIN</h1>
+      <!-- Form -->
+      <form class="signup-form">
+        <input type="text" name="first-name" placeholder="First Name" required>
+        <input type="text" name="last-name" placeholder="Last Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" minlength="6" required>
+        <input type="password" name="cpassword" placeholder="Confirm Password" minlength="6" required>
+        <button type="submit">Create Account</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
