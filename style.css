@@ -1,0 +1,88 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Hero background */
+.hero {
+  background-image: url("assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.65); 
+  padding: 50px 40px;
+  border-radius: 12px;
+  text-align: center;
+  width: 380px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Logo */
+.logo {
+  color: white;
+  font-size: 42px;
+  letter-spacing: 2px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+/* Form */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #E5E7EB;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+/* Focused input */
+.signup-form input:focus {
+  border-color: #2563eb; 
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.4);
+  outline: none;
+}
+
+/* Invalid password */
+.signup-form input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
+/* Button */
+.signup-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #596D48;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.signup-form button:hover {
+  background-color: #4a5c3b;
+}
